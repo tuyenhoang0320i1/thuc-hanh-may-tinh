@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+    <style type="text/css">
+        label{
+            float: left;
+            width: 100px;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    function tinh() {
+        let a1=parseFloat(document.getElementById('dly').value);
+        let a2=parseFloat(document.getElementById('dhoa').value);
+        let a3=parseFloat(document.getElementById('dsinh').value);
+        let tong=a1+a2+a3;
+        let dtb=tong/3;
+        document.getElementById("tong").value=tong;
+        document.getElementById("dtb").value=dtb;
+    }
+</script>
+<h1 style="color: blue">Program Tính tổng điểm và Điểm trung bình</h1>
+<form action=""method="post">
+    <label>Addition (+)</label>
+    <input id= "dly" type="text" name="cong" /><br/>
+    <label>Subtraction (-)</label>
+    <input id= "dhoa" type="text" tru="diem" /><br/>
+    <label> Multiplication (x)</label>
+    <input id= "dsinh" type="text" nhan="diem" /><br/>
+    <label>Division (/)</label>
+    <input id= "dsinh" type="text" chia="diem" /><br/>
+    <label>Tổng điểm là:</label>
+    <input id="tong" type="text" name="diem" /><br/>
+    <label>Điểm trung bình là:</label>
+    <input id="dtb" type="text" name="diem" /><br/>
+    <label></label>
+    <input type="button" value="" onclick="tinh()"/>
+    <input type="button" value="" onclick="tinh()"/>
+</form>
+
+</body>
+</html>
